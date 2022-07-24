@@ -1,0 +1,24 @@
+jest | TEST COVERAGE
+
+npm test  // nos dice si todo puede correr correctamente
+
+npm run test:coverage  // nos da el porcentaje de cobertura
+
+
+1) en package.json busco y modifico:
+
+"scripts":{
+	"test":"jest",
+	"test:coverage":"jest --coverage",	
+}
+
+
+2) en consola = 
+
+npm run test:coverage
+
+jest se encarga de ejecutar todas las pruebas de todos los scripts pruebas y nos da un reporte q nos indica el porcentaje de pruebas q tenemos dentro del proyecto.
+
+3) al momento de correr el npm se genera una carpeta "coverage" y si abrimos el liveServer del index.html que esta en esa carpeta nos lleva a una pagina que nos muestra el reporte. Ahi podemos ver el archivo y jest nos muestra que nos queda por probar.
+
+para cubrir el 100 de debemos hacer las modificaciones necesarias
